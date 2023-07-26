@@ -1,5 +1,6 @@
-      let particles = [];
-      const CANVAS_SIZE = 600;
+// カシスの日
+let particles = [];
+      const CANVAS_SIZE = 400;
 
       function setup() {
         frameRate(120);
