@@ -1,14 +1,21 @@
+canvas {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+}
+
 body {
-	font-family: Arial, sans-serif;
+	font-family: Noto Sans, sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
-	background-color: #fefefe;
+	background-color: #232323;
   }
 
-  .calendar {;
+  .calendar {
 	display: grid;
 	grid-template-columns: repeat(7, 10vw);
 	grid-template-rows: repeat(3, 10vw);
@@ -17,6 +24,7 @@ body {
 
   .day {
 	display: flex;
+	padding: 10px;
 	justify-content: center;
 	align-items: center;
 	background: rgba(255, 255, 255, 0.2);
@@ -28,6 +36,7 @@ border: 1px solid rgba(255, 255, 255, 0.29);
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: bold;
+	color: #fefefe;
   }
 
   .noDay {

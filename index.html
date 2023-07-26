@@ -6,6 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Advent Calendar</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+	<script src="js/2023-07-14-visceral-fat-3.js"></script>
+	<script src="js/2023-07-14-visceral-fat.js"></script>
+	<script src="js/2023-07-13-cassis.js"></script>
+	<script src="js/2023-07-15-sunflower.js"></script>
+	<script src="js/2023-07-16-kokudo.js"></script>
+	<script src="js/2023-07-17-tokyo.js"></script>
+	<script src="js/2023-07-18-photo-smog.js"></script>
+	<script src="js/2023-07-19-woman.js"></script>
+	<script src="js/2023-07-20-tshirt.js"></script>
+	<script src="sketch.js"></script>
 </head>
 
 <body id="bdy">
@@ -14,31 +25,19 @@
 		<div class="noDay"></div>
 		<div class="noDay"></div>
 		<div class="noDay"></div>
-		<div class="day" id="day1" onmouseover="day1Click();">Day 1</div>
-		<div class="day" onclick="showSketch(2)">Day 2</div>
-		<div class="day" onclick="showSketch(2)">Day 3</div>
-		<div class="day" onclick="showSketch(2)">Day 4</div>
-		<div class="day" onclick="showSketch(2)">Day 5</div>
-		<div class="day" onclick="showSketch(2)">Day 6</div>
+		<div class="day" id="day1" onmouseover="dayClick(1);">カシス</div>
+		<div class="day" id="day1" onmouseover="dayClick(2);">内臓脂肪</div>
+		<div class="day" id="day1" onmouseover="dayClick(3);">ひまわり</div>
+		<div class="day" id="day1" onmouseover="dayClick(4);">国土交通Day</div>
+		<div class="day" id="day1" onmouseover="dayClick(5);">東京</div>
+		<div class="day" id="day1" onmouseover="dayClick(6);">光化学スモッグ</div>
+		<div class="day" id="day1" onmouseover="dayClick(7);">女性大臣</div>
+		<div class="day" id="day1" onmouseover="dayClick(8);">Tシャツの日</div>
 		<!-- Add other days here -->
-		<div class="day" onclick="showSketch(7)">Day 7</div>
 	</div>
-	<script src="js/sketch1.js"></script>
 	<script src="js/sketch2.js"></script>
 	<!-- Include other scripts for the sketches -->
 	<script src="js/sketch7.js"></script>
-	<script src="script.js"></script>
 </body>
-
-<script type="text/javascript">
-	function day1Click() {
-		const body = document.getElementById('bdy');
-		const day1 = document.getElementById('day1');
-
-		day1.addEventListener('mouseover', function () {
-			body.style.backgroundColor = 'orange';
-		});
-	}
-</script>
 
 </html>
