@@ -8,13 +8,13 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="bdy">
 	<div class="calendar">
 		<div class="noDay"></div>
 		<div class="noDay"></div>
 		<div class="noDay"></div>
 		<div class="noDay"></div>
-		<div class="day" onclick="showSketch(1)">Day 1</div>
+		<div class="day" id="day1" onmouseover="day1Click();">Day 1</div>
 		<div class="day" onclick="showSketch(2)">Day 2</div>
 		<div class="day" onclick="showSketch(2)">Day 3</div>
 		<div class="day" onclick="showSketch(2)">Day 4</div>
@@ -29,5 +29,16 @@
 	<script src="js/sketch7.js"></script>
 	<script src="script.js"></script>
 </body>
+
+<script type="text/javascript">
+	function day1Click() {
+		const body = document.getElementById('bdy');
+		const day1 = document.getElementById('day1');
+
+		day1.addEventListener('mouseover', function () {
+			body.style.backgroundColor = 'orange';
+		});
+	}
+</script>
 
 </html>
