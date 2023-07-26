@@ -56,5 +56,3 @@ let kokuDaySketch = function (p) {
   }
 }
 
-// Create an instance of the sketch
-let kokuDayInstance = new p5(kokuDaySketch);
